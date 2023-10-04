@@ -83,6 +83,12 @@ class _MyHomePageState extends State<MyHomePage> {
                           type: SocialLoginType.facebook));
                     },
                     child: const Text('Facebook')),
+                TextButton(
+                    onPressed: () {
+                      authBloc.add(const AuthEvent.socialLogin(
+                          type: SocialLoginType.google));
+                    },
+                    child: const Text('Google')),
               ],
             ),
           ),

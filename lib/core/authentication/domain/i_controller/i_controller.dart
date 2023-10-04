@@ -1,5 +1,6 @@
 import 'package:injectable/injectable.dart';
 import 'package:social_login/core/authentication/data/model/social_user_model.dart';
+import 'package:social_login/core/authentication/domain/i_repository/i_repository.dart';
 
 abstract class IAuthController {
   Future<SocialUserModel> socialLogin({required SocialLoginType type});
@@ -7,12 +8,12 @@ abstract class IAuthController {
 
 @Injectable(as: IAuthController)
 class AuthController implements IAuthController {
-  final IAuthController iAuthController;
-  AuthController(this.iAuthController);
+  final IAuthRepository authRepository;
+  AuthController(this.authRepository);
 
   @override
   Future<SocialUserModel> socialLogin({required SocialLoginType type}) async {
-    final result = await iAuthController.socialLogin(type: type);
+    final result = await authRepository.socialLogin(type: type);
 
     return result;
   }
