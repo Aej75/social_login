@@ -1,7 +1,7 @@
-name: social_login
-description: A new Flutter package project.
-version: 0.0.1
-homepage:
+name: social_login_bloc
+description: Google and Facebook with Bloc+DI.
+version: 0.0.8
+homepage: https://github.com/Aej75/social_login
 
 environment:
   sdk: '>=3.1.0 <4.0.0'
@@ -10,7 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  flutter_facebook_auth: ^6.0.2
+  flutter_facebook_auth: ^5.0.11
   google_sign_in: ^6.1.5
   json_serializable: ^6.4.0
   flutter_bloc: ^8.1.3

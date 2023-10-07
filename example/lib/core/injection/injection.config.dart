@@ -11,13 +11,13 @@
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
-import 'package:social_login/core/authentication/auth_bloc/auth_bloc.dart'
+import 'package:social_login_bloc/core/authentication/auth_bloc/auth_bloc.dart'
     as _i6;
-import 'package:social_login/core/authentication/data/repository/auth_repository.dart'
+import 'package:social_login_bloc/core/authentication/data/repository/auth_repository.dart'
     as _i4;
-import 'package:social_login/core/authentication/domain/i_controller/i_controller.dart'
+import 'package:social_login_bloc/core/authentication/domain/i_controller/i_controller.dart'
     as _i5;
-import 'package:social_login/core/authentication/domain/i_repository/i_repository.dart'
+import 'package:social_login_bloc/core/authentication/domain/i_repository/i_repository.dart'
     as _i3;
 
 extension GetItInjectableX on _i1.GetIt {

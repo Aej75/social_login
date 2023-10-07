@@ -1,5 +1,7 @@
 import 'package:example/core/injection/injection.config.dart';
-import 'package:social_login/social_login.dart';
+import 'package:get_it/get_it.dart';
+import 'package:injectable/injectable.dart';
+import 'package:social_login_bloc/social_login.dart';
 
 final getIt = GetIt.instance;
 
@@ -8,4 +10,7 @@ final getIt = GetIt.instance;
   preferRelativeImports: true, // default
   asExtension: true, // default
 )
-configureDependencies() => getIt.init();
+configureDependencies() async {
+  await configureModuleDependencies(getIt);
+  getIt.init();
+}

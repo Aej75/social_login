@@ -1,8 +1,10 @@
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 import 'package:injectable/injectable.dart';
-import 'package:social_login/core/authentication/data/model/social_user_model.dart';
-import 'package:social_login/core/authentication/domain/i_controller/i_controller.dart';
+
+
+import '../data/model/social_user_model.dart';
+import '../domain/i_controller/i_controller.dart';
 
 part 'auth_bloc.freezed.dart';
 part 'auth_event.dart';

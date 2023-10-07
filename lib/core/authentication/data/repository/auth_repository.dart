@@ -1,7 +1,7 @@
 import 'package:injectable/injectable.dart';
-import 'package:social_login/core/authentication/data/model/social_user_model.dart';
-import 'package:social_login/core/authentication/domain/i_repository/i_repository.dart';
-import 'package:social_login/core/social_auth_functions/social_auth_functions.dart';
+import 'package:social_login_bloc/core/authentication/data/model/social_user_model.dart';
+import 'package:social_login_bloc/core/authentication/domain/i_repository/i_repository.dart';
+import 'package:social_login_bloc/core/social_auth_functions/social_auth_functions.dart';
 
 @Injectable(as: IAuthRepository)
 class AuthRepository implements IAuthRepository {
@@ -13,7 +13,7 @@ class AuthRepository implements IAuthRepository {
 
         return result;
       } catch (e) {
-        return SocialUserModel(ok: false);
+        return SocialUserModel(ok: false, message: 'Something went wrong');
       }
     } else {
       try {

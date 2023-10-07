@@ -1,3 +1,7 @@
 ## 0.0.1
 
-* TODO: Describe initial release.
+Social Login(Facebook and Google)
+
+## 0.0.7
+
+Added Documentation.

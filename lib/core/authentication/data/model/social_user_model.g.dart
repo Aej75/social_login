@@ -16,6 +16,8 @@ SocialUserModel _$SocialUserModelFromJson(Map<String, dynamic> json) =>
           ? null
           : AccessToken.fromJson(json['accessToken'] as Map<String, dynamic>),
       message: json['message'] as String?,
+      email: json['email'] as String?,
+      provider: json['provider'] as String?,
     );
 
 Map<String, dynamic> _$SocialUserModelToJson(SocialUserModel instance) =>
@@ -26,4 +28,6 @@ Map<String, dynamic> _$SocialUserModelToJson(SocialUserModel instance) =>
       'id': instance.id,
       'picture': instance.picture,
       'message': instance.message,
+      'email': instance.email,
+      'provider': instance.provider,
     };

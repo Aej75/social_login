@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:social_login/core/authentication/auth_bloc/auth_bloc.dart';
-import 'package:social_login/core/authentication/data/model/social_user_model.dart';
-import 'package:social_login/core/injection/injection.dart';
+import 'package:social_login_bloc/social_login.dart';
+
+import 'core/injection/injection.dart';
 
 void main() async {
   await configureDependencies();

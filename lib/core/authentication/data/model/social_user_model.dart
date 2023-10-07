@@ -11,6 +11,8 @@ class SocialUserModel {
   final String? id;
   final String? picture;
   final String? message;
+  final String? email;
+  final String? provider;
 
   SocialUserModel(
       {required this.ok,
@@ -18,7 +20,9 @@ class SocialUserModel {
       this.id,
       this.picture,
       this.accessToken,
-      this.message});
+      this.message,
+      this.email,
+      this.provider});
 
   factory SocialUserModel.fromJson(Map<String, dynamic> json) =>
       _$SocialUserModelFromJson(json);
